@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { movieApiInterceptorProvider } from './interceptors/movies-api.interceptor';
 import { MovieListComponent } from './movie-list/movie-list.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [movieApiInterceptorProvider
   ],
