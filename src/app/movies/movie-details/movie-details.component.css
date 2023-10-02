@@ -1,0 +1,10 @@
+.movie-detail {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  .movie-detail-info{
+    display: flex;
+    flex-direction: column;
+    }
+}

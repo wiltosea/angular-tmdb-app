@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MoviesService } from './movie.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +6,5 @@ import { MoviesService } from './movie.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-HTTP';
-  constructor(private movieService: MoviesService) { }
-
-  ngOnInit(): void {
-    this.movieService.getMovies().subscribe((data) => {
-      console.log(data);
-    });
-  }
+  title = 'angular-movies';
 }

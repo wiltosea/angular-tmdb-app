@@ -1,0 +1,14 @@
+<section class="movie-detail">
+  <app-movie-image [path]="movie.poster_path" [size]="500"></app-movie-image>
+  <div class="movie-detail-info">
+    <h1 class="movie-title">{{movie.title}}</h1>
+    <div class="movie-description">
+      {{movie.overview}}
+    </div>
+    <div class="movie-detail-info__item">
+      <h2 class="movie-detail-info__item__label">Release Date:</h2>
+      <span class="movie-detail-info__item__value">{{movie.release_date}}</span>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+.movie-item{
+  width: 300px;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin-right: 1.5rem;
+}
